@@ -15,7 +15,7 @@ print "Old MAC address: ",
 os.system("ifconfig en1 | grep ether")
 
 # setting new random MAC address
-os.system("sudo ifconfig en1 ether " + new_mac() )
+os.system("sudo ifconfig en1 ether " + get_mac() )
 
 print "\nNew MAC address: ",
 os.system("ifconfig en1 | grep ether")
